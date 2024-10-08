@@ -1,3 +1,13 @@
+//Primer programa
+class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World");
+            Console.ReadLine();//No se necesita en las versiones actuales de visual studio
+        }
+    }
+//Segunda leccion
 class Program
 {
     static void Main(string[] args)
