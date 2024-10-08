@@ -1,0 +1,43 @@
+class Program
+{
+    static void Main(string[] args)
+    {
+        /*
+        Console.WriteLine("Bob's Big Giveaway");
+        Console.Write("Choose door: 1, 2 or 3: ");
+        string value = Console.ReadLine();
+
+        string mensaje = "";
+
+        if (value == "1")
+            mensaje = "you have won a car";
+        else if (value == "2")
+            mensaje = "you won a new boat!";
+        else if (value == "3")
+            mensaje = "you won a new cat!";
+        else
+        {
+            mensaje = "sorry, we didn't understand. ";
+            
+            mensaje += "You Loose.";
+        }
+
+        Console.WriteLine(mensaje);
+        Console.ReadLine();
+        */
+
+        Console.WriteLine("Bob's Big Giveaway");
+        Console.Write("Choose a door: 1, 2 or 3: ");
+        string userValue = Console.ReadLine();
+
+  
+        string mensaje = (userValue == "1") ? "boat" : "strand of lint";
+
+      
+
+        Console.WriteLine("You entered: {0}, therefore you won a {1}.", userValue, mensaje);
+        Console.ReadLine();
+
+    }
+}
+
