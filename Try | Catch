@@ -11,12 +11,12 @@ class Program
         catch (FileNotFoundException ex)
         {
             Console.WriteLine("Hubo un problema");
-            Console.WriteLine("Make sure the file name is named correctly: Example.txt");
+            Console.WriteLine("Asegúrese de que el nombre del archivo sea correcto: Example.txt");
         }
         catch (DirectoryNotFoundException ex)
         {
             Console.WriteLine("Hubo un problema");
-            Console.WriteLine(@"Make sure the dictory c:\users\... exists");
+            Console.WriteLine(@"Asegúrese de que el diccionario c:\users\... exista");
         }
         catch (Exception ex)
         {
