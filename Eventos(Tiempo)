@@ -10,7 +10,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Timer myTimer = new Timer();
+        Timer myTimer = new Timer(2000);
 
         myTimer.Elapsed += MyTimer_Elapsed;
         myTimer.Elapsed += MyTimer_Elapsed1;
