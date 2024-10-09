@@ -1,0 +1,33 @@
+class Program
+{
+    static void Main(string[] args)
+    {
+        try
+        {
+            string content = File.ReadAllText
+            (@"C:\Lesson22\Exampl.txt");
+            Console.WriteLine(content);
+        }
+        catch (FileNotFoundException ex)
+        {
+            Console.WriteLine("Hubo un problema");
+            Console.WriteLine("Make sure the file name is named correctly: Example.txt");
+        }
+        catch (DirectoryNotFoundException ex)
+        {
+            Console.WriteLine("Hubo un problema");
+            Console.WriteLine(@"Make sure the dictory c:\users\... exists");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Hubo un problema");
+            Console.WriteLine(ex.Message);
+        }
+        finally
+        {
+
+            Console.WriteLine("Bye...");
+        }
+        Console.ReadLine();
+    }
+}
